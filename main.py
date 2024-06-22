@@ -12,7 +12,8 @@ def about():
 
 @app.route("/how-to-use-ibooks")
 def howtouseibooks():
-    return "<p>Hello! u may be wondering how to use ibooks. well it's easy</p>"
+  return render_template("how-to-use-ibooks.html")
+  return "<p>Hello! u may be wondering how to use ibooks. well it's easy</p>"
   
 if __name__ == '__main__' :
   app.run(host='0.0.0.0', port=5000)
